@@ -1,1 +1,0 @@
-C:\Users\Delaram\Documents\GitHub\Bug-Tracker\code\bug_tracker_glfw_opengl3\Debug\MyProject.exe
