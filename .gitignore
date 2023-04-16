@@ -47,3 +47,4 @@ examples/example_emscripten_wgpu/web/*
 ## JetBrains IDE artifacts
 .idea
 cmake-build-*
+*.json

@@ -13,19 +13,19 @@
     <ClCompile Include="main.cpp">
       <Filter>sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\imgui.cpp">
+    <ClCompile Include="..\..\dear_imgui\imgui.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\imgui_demo.cpp">
+    <ClCompile Include="..\..\dear_imgui\imgui_demo.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\imgui_draw.cpp">
+    <ClCompile Include="..\..\dear_imgui\imgui_draw.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\imgui_tables.cpp">
+    <ClCompile Include="..\..\dear_imgui\imgui_tables.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\imgui_widgets.cpp">
+    <ClCompile Include="..\..\dear_imgui\imgui_widgets.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
     <ClCompile Include="..\..\backends\imgui_impl_glfw.cpp">
@@ -36,13 +36,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\imconfig.h">
+    <ClInclude Include="..\..\dear_imgui\imconfig.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\imgui.h">
+    <ClInclude Include="..\..\dear_imgui\imgui.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\imgui_internal.h">
+    <ClInclude Include="..\..\dear_imgui\imgui_internal.h">
       <Filter>imgui</Filter>
     </ClInclude>
     <ClInclude Include="..\..\backends\imgui_impl_glfw.h">
