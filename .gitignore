@@ -8,10 +8,10 @@ imgui.ini
 *.o
 *.obj
 *.exe
-examples/build/*
-examples/*/Debug/*
-examples/*/Release/*
-examples/*/x64/*
+code/build/*
+code/bug_tracker_glfw_opengl3/Debug/*
+code/bug_tracker_glfw_opengl3/Release/*
+code/bug_tracker_glfw_opengl3/x64/*
 
 ## Visual Studio artifacts
 .vs
@@ -37,12 +37,12 @@ project.xcworkspace
 xcuserdata
 
 ## Emscripten artifacts
-examples/*.o.tmp
-examples/*.out.js
-examples/*.out.wasm
-examples/example_glfw_opengl3/web/*
-examples/example_sdl2_opengl3/web/*
-examples/example_emscripten_wgpu/web/*
+code/bug_tracker_glfw_opengl3/*.o.tmp
+code/bug_tracker_glfw_opengl3/*.out.js
+code/bug_tracker_glfw_opengl3/*.out.wasm
+code/bug_tracker_glfw_opengl3/example_glfw_opengl3/web/*
+code/bug_tracker_glfw_opengl3/example_sdl2_opengl3/web/*
+code/bug_tracker_glfw_opengl3/example_emscripten_wgpu/web/*
 
 ## JetBrains IDE artifacts
 .idea
