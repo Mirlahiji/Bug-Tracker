@@ -124,14 +124,32 @@ int main(int, char**)
             ImGui::SetNextWindowSize(ImVec2(500,500));
             if(ImGui::Begin("Hello!",NULL,ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoCollapse))
             {
-                static bool testbool = false;
-                Checkbox("test bool",&testbool);
-
-                if (Button("click me!")) {
-
+                //Make frame of everything round
+                style.FrameRounding = 6.0f;
+                style.GrabRounding = style.FrameRounding;
+                ImGuiTabBarFlags tab_bar_flags = ImGuiTabBarFlags_None;
+                if (ImGui::BeginTabBar("MyTabBar", tab_bar_flags))
+                {
+                    if (ImGui::BeginTabItem("Overview"))
+                    {
+                        ImGui::SeparatorText("Status");
+                        ImGui::Text("Ready");
+                        ImGui::Text("In progress");
+                        ImGui::Text("Done");
+                        ImGui::SeparatorText("Priority");
+                        ImGui::SeparatorText("People");
+                        ImGui::EndTabItem();
+                    }
+                    
+                    if (ImGui::BeginTabItem("Issues"))
+                    {
+                        ImGui::SeparatorText("People");
+                        ImGui::EndTabItem();
+                    }
                 }
-
-            }ImGui::End();
+                ImGui::EndTabBar();
+            }
+            ImGui::End();
         }
 
         // Rendering
