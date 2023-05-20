@@ -74,6 +74,7 @@ Rectangle {
             height: 303
             visible: true
             color: "#333333"
+            radius: 12
 
             Column {
                 id: column
@@ -245,7 +246,97 @@ Rectangle {
         y: -357
         width: 750
         height: 330
-        color: "#ffffff"
+
+        Rectangle {
+            id: bugDialog
+            x: 36
+            y: 57
+            width: 686
+            height: 105
+            color: "#333333"
+            radius: 12
+            visible: true
+
+            Row {
+                id: row
+                x: 7
+                y: 7
+                width: 695
+                height: 42
+                spacing: 14
+
+                TextInput {
+                    id: textInput
+                    width: 500
+                    height: 40
+                    color: "#ffffff"
+                    text: qsTr("Bug ...")
+                    font.pixelSize: 16
+                    verticalAlignment: Text.AlignVCenter
+                }
+
+                Button {
+                    id: button
+                    text: qsTr("Button")
+                }
+
+                Button {
+                    id: button1
+                    text: qsTr("Button")
+                }
+            }
+
+            RadioButton {
+                id: radioButton
+                x: 76
+                y: 52
+                text: qsTr("Low")
+            }
+
+            RadioButton {
+                id: radioButton1
+                x: 152
+                y: 52
+                text: qsTr("Medium")
+            }
+
+            RadioButton {
+                id: radioButton2
+                x: 253
+                y: 52
+                text: qsTr("High")
+            }
+
+            Text {
+                id: text4
+                x: 12
+                y: 63
+                width: 62
+                height: 28
+                color: "#ffffff"
+                text: qsTr("Pority :")
+                font.pixelSize: 16
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.bold: true
+            }
+        }
+
+        Button {
+            id: button2
+            x: 658
+            y: 0
+            width: 84
+            height: 51
+            text: qsTr("+")
+            font.bold: true
+            font.pointSize: 20
+
+            Connections {
+                target: button2
+                onClicked: bugDialog.visible = true
+            }
+        }
     }
 
     states: [

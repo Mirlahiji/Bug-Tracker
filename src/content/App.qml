@@ -11,6 +11,5 @@ Window {
     Screen01 {
         id: mainScreen
     }
-
 }
 
